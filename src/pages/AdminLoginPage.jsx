@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ShieldCheck, Lock, User, KeyRound, AlertCircle } from 'lucide-react';
+import { ShieldCheck, Lock, User, KeyRound } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import './AdminLoginPage.css';
 
@@ -57,8 +57,7 @@ export const AdminLoginPage = () => {
 
         {authError && (
           <div className="auth-error-alert">
-            <AlertCircle size={16} className="alert-icon" />
-            <span>{authError}</span>
+            {authError}
           </div>
         )}
 
