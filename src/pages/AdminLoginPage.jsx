@@ -69,7 +69,7 @@ export const AdminLoginPage = () => {
               <User size={18} className="input-icon" />
               <input 
                 type="text" 
-                placeholder="Введіть логін (admin)" 
+                placeholder="Введіть логін" 
                 value={username}
                 onChange={(e) => {
                   setUsername(e.target.value);
@@ -87,7 +87,7 @@ export const AdminLoginPage = () => {
               <KeyRound size={18} className="input-icon" />
               <input 
                 type="password" 
-                placeholder="Введіть пароль (admin123)" 
+                placeholder="Введіть пароль" 
                 value={password}
                 onChange={(e) => {
                   setPassword(e.target.value);
@@ -104,11 +104,6 @@ export const AdminLoginPage = () => {
             <span>Увійти в систему</span>
           </button>
         </form>
-
-        <div className="login-hint">
-          <p><strong>Тестові дані для входу:</strong></p>
-          <p>Логін: <code>admin</code> | Пароль: <code>admin123</code></p>
-        </div>
       </div>
     </div>
   );

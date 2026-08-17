@@ -81,20 +81,3 @@
   font-size: 0.95rem;
   margin-top: 8px;
 }
-
-.login-hint {
-  margin-top: 20px;
-  padding-top: 14px;
-  border-top: 1px solid var(--border-color);
-  text-align: center;
-  font-size: 0.8rem;
-  color: var(--text-muted);
-}
-
-.login-hint code {
-  background: var(--bg-main);
-  padding: 2px 6px;
-  border-radius: var(--radius-sm);
-  color: var(--primary-color);
-  font-weight: 600;
-}

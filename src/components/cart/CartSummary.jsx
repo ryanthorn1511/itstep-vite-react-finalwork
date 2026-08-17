@@ -50,7 +50,7 @@ export const CartSummary = ({ onCheckout }) => {
           <div className="promo-input-group">
             <input 
               type="text" 
-              placeholder="Промокод (TECH10)" 
+              placeholder="Введіть промокод" 
               value={promoCode}
               onChange={(e) => setPromoCode(e.target.value)}
               className="form-input promo-input"
