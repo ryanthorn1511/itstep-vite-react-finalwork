@@ -66,23 +66,9 @@
   white-space: nowrap;
 }
 
-.stock-badge {
-  font-size: 0.75rem;
+.table-stock {
   font-weight: 600;
-  padding: 2px 8px;
-  border-radius: var(--radius-sm);
-}
-
-.stock-badge.available {
-  background: #f0fdf4;
-  color: var(--success-color);
-  border: 1px solid rgba(22, 163, 74, 0.2);
-}
-
-.stock-badge.unavailable {
-  background: #fef2f2;
-  color: var(--danger-color);
-  border: 1px solid rgba(220, 38, 38, 0.2);
+  color: var(--text-main);
 }
 
 .table-actions {

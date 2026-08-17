@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { Plus, Search, Package, Layers, CheckCircle2, AlertTriangle, X } from 'lucide-react';
+import { Plus, Search, AlertTriangle, X } from 'lucide-react';
 import { useProducts } from '../context/ProductContext';
 import { AdminProductTable } from '../components/admin/AdminProductTable';
 import { ProductFormModal } from '../components/admin/ProductFormModal';
@@ -19,14 +19,6 @@ export const AdminDashboardPage = () => {
       product.category.toLowerCase().includes(searchTerm.toLowerCase().trim())
     );
   }, [products, searchTerm]);
-
-  const totalCategoriesCount = useMemo(() => {
-    return new Set(products.map(p => p.category)).size;
-  }, [products]);
-
-  const totalStockCount = useMemo(() => {
-    return products.reduce((acc, p) => acc + (p.stockCount || 10), 0);
-  }, [products]);
 
   const handleOpenAddModal = () => {
     setProductToEdit(null);
@@ -65,38 +57,6 @@ export const AdminDashboardPage = () => {
           <Plus size={18} />
           <span>Додати новий товар</span>
         </button>
-      </div>
-
-      <div className="stats-grid">
-        <div className="stat-card glass-panel">
-          <div className="stat-icon-box primary">
-            <Package size={24} />
-          </div>
-          <div className="stat-info">
-            <span className="stat-label">Всього товарів</span>
-            <span className="stat-value">{products.length}</span>
-          </div>
-        </div>
-
-        <div className="stat-card glass-panel">
-          <div className="stat-icon-box secondary">
-            <Layers size={24} />
-          </div>
-          <div className="stat-info">
-            <span className="stat-label">Категорій</span>
-            <span className="stat-value">{totalCategoriesCount}</span>
-          </div>
-        </div>
-
-        <div className="stat-card glass-panel">
-          <div className="stat-icon-box success">
-            <CheckCircle2 size={24} />
-          </div>
-          <div className="stat-info">
-            <span className="stat-label">Загальний склад</span>
-            <span className="stat-value">{totalStockCount} шт.</span>
-          </div>
-        </div>
       </div>
 
       <div className="admin-controls-bar glass-panel">

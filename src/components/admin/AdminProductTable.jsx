@@ -13,7 +13,7 @@ export const AdminProductTable = ({ products, onEdit, onDelete }) => {
             <th>Назва</th>
             <th>Категорія</th>
             <th>Ціна</th>
-            <th>Наявність</th>
+            <th>Кількість</th>
             <th>Дії</th>
           </tr>
         </thead>
@@ -44,12 +44,8 @@ export const AdminProductTable = ({ products, onEdit, onDelete }) => {
                 <td className="table-price">
                   {formatPrice(product.price)}
                 </td>
-                <td>
-                  {product.inStock ? (
-                    <span className="stock-badge available">В наявності ({product.stockCount || 10})</span>
-                  ) : (
-                    <span className="stock-badge unavailable">Немає</span>
-                  )}
+                <td className="table-stock">
+                  {product.inStock ? (product.stockCount || 0) : 0}
                 </td>
                 <td>
                   <div className="table-actions">
