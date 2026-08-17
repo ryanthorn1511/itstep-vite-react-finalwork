@@ -1,0 +1,25 @@
+.toast-container {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 1000;
+}
+
+.toast-body {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--text-main);
+  border: 1px solid var(--text-main);
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.toast-icon {
+  color: var(--success-color);
+  flex-shrink: 0;
+}

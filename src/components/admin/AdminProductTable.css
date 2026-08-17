@@ -1,0 +1,110 @@
+.table-responsive {
+  overflow-x: auto;
+  border-radius: var(--radius-md);
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.admin-table th, .admin-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.admin-table th {
+  background: var(--bg-main);
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.admin-table tbody tr:hover {
+  background: #f8fafc;
+}
+
+.table-img {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  background: #f1f5f9;
+  border: 1px solid var(--border-color);
+}
+
+.table-product-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  color: var(--text-main);
+  max-width: 280px;
+  font-size: 0.9rem;
+}
+
+.view-product-link {
+  color: var(--text-muted);
+  transition: color var(--transition-fast);
+}
+
+.view-product-link:hover {
+  color: var(--primary-color);
+}
+
+.table-category {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.table-price {
+  font-weight: 700;
+  color: var(--text-main);
+  white-space: nowrap;
+}
+
+.stock-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+}
+
+.stock-badge.available {
+  background: #f0fdf4;
+  color: var(--success-color);
+  border: 1px solid rgba(22, 163, 74, 0.2);
+}
+
+.stock-badge.unavailable {
+  background: #fef2f2;
+  color: var(--danger-color);
+  border: 1px solid rgba(220, 38, 38, 0.2);
+}
+
+.table-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.action-edit:hover {
+  background: var(--primary-light);
+  color: var(--primary-color);
+  border-color: rgba(37, 99, 235, 0.3);
+}
+
+.action-delete:hover {
+  background: #fef2f2;
+  color: var(--danger-color);
+  border-color: rgba(220, 38, 38, 0.3);
+}
+
+.empty-table-cell {
+  text-align: center;
+  padding: 30px;
+  color: var(--text-muted);
+}

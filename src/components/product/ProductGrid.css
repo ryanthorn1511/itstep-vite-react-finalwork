@@ -1,0 +1,28 @@
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.empty-catalog {
+  text-align: center;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.empty-icon {
+  color: var(--text-muted);
+}
+
+.empty-catalog h3 {
+  font-size: 1.3rem;
+  color: var(--text-main);
+}
+
+.empty-catalog p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
