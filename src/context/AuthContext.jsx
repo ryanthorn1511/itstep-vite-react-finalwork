@@ -21,7 +21,7 @@ export const AuthProvider = ({ children }) => {
       return { success: true };
     }
     console.warn('Невдала спроба авторизації адміністратора');
-    return { success: false, error: 'Невірний логін або пароль. Спробуйте логін: admin / пароль: admin123' };
+    return { success: false, error: 'Невірний логін або пароль' };
   };
 
   const logout = () => {

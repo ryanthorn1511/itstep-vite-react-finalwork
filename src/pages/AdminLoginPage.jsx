@@ -57,7 +57,7 @@ export const AdminLoginPage = () => {
 
         {authError && (
           <div className="auth-error-alert">
-            <AlertCircle size={20} className="alert-icon" />
+            <AlertCircle size={16} className="alert-icon" />
             <span>{authError}</span>
           </div>
         )}

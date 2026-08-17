@@ -43,12 +43,12 @@
 
 .auth-error-alert {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 8px;
   background: #fef2f2;
-  border: 1px solid rgba(220, 38, 38, 0.3);
-  color: var(--danger-color);
-  padding: 10px 14px;
+  border: 1px solid #fee2e2;
+  color: #dc2626;
+  padding: 8px 12px;
   border-radius: var(--radius-md);
   font-size: 0.85rem;
   margin-bottom: 16px;
@@ -56,8 +56,7 @@
 
 .alert-icon {
   flex-shrink: 0;
-  color: var(--danger-color);
-  margin-top: 2px;
+  color: #ef4444;
 }
 
 .input-with-icon {

@@ -36,8 +36,8 @@ export const Header = () => {
           </NavLink>
         </nav>
 
-        <div className="header-actions">
-          {isAdminLoggedIn ? (
+        {isAdminLoggedIn && (
+          <div className="header-actions">
             <div className="admin-status-group">
               <Link to="/admin" className="btn btn-secondary admin-btn">
                 <ShieldCheck size={18} />
@@ -51,13 +51,8 @@ export const Header = () => {
                 <LogOut size={18} />
               </button>
             </div>
-          ) : (
-            <Link to="/admin/login" className="btn btn-secondary admin-login-link">
-              <ShieldCheck size={18} />
-              <span>Вхід для адміна</span>
-            </Link>
-          )}
-        </div>
+          </div>
+        )}
       </div>
     </header>
   );
